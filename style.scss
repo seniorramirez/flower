@@ -160,6 +160,41 @@ body {
     }
   }
 
+  &--4 {
+    animation: moving-flower-1 4s linear infinite;
+    left: 80%;
+    .flower__line {
+      
+      animation-delay: 0.9S;
+
+      &__leaf {
+        &--1 {
+          animation: blooming-leaf-right var(--fl-speed) 1.6s backwards;
+        }
+
+        &--2 {
+          animation: blooming-leaf-right var(--fl-speed) 1.4s backwards;
+        }
+
+        &--3 {
+          animation: blooming-leaf-left var(--fl-speed) 1.2s backwards;
+        }
+
+        &--4 {
+          animation: blooming-leaf-left var(--fl-speed) 1s backwards;
+        }
+
+        &--5 {
+          animation: blooming-leaf-right var(--fl-speed) 1.8s backwards;
+        }
+
+        &--6 {
+          animation: blooming-leaf-left var(--fl-speed) 2s backwards;
+        }
+      }
+    }
+  }
+
   &__leafs {
     position: relative;
     animation: blooming-flower 2s backwards;
@@ -167,7 +202,7 @@ body {
     $delay: 0.8;
     $inc: 0.3;
 
-    @for $i from 1 through 3 {
+    @for $i from 1 through 4 {
       &--#{$i} {
         $delay: $delay + $inc;
         animation-delay: #{$delay}s;
@@ -1164,6 +1199,23 @@ body {
     filter: blur(0.3vmin);
     transform: scale(0.6) rotate(2deg);
     opacity: 0.7;
+  }
+
+  &--8 {
+    left: 80vmin;
+    bottom: 15vmin;
+    z-index: -1;
+    filter: blur(0.3vmin);
+    transform: scale(0.6) rotate(2deg);
+    opacity: 0.7;
+  }
+
+  &--9 {
+    left: 80vmin;
+    bottom: -20vmin;
+    z-index: 100;
+    filter: blur(0.3vmin);
+    transform: scale(0.8) rotate(2deg);
   }
 
   .leaf {

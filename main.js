@@ -5,7 +5,7 @@ const fn = () => {
   let first = Splitting({ target: title_first, by: 'words' });
 
   gsap.timeline({ scrollTrigger:{ scrub:1 },onComplete:()=>{document.querySelector('#notloaded').classList.remove("not-loaded");} })
-  //.to('.downArrow ', {attr:{r:0}, duration:0.05}, 0)
+  .to('.downArrow ', {attr:{r:0}, duration:0.05}, 0)
   .to('.downArrow', {opacity:0, duration:0.6, ease:'sine.inOut'}, 0)
   .to('.text-only', {duration:1, y:'10vh', ease:'power2.in'})
   .from('.text-only', {opacity:0, duration:0.5, ease:'sine.inOut'})
