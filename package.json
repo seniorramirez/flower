@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "gsap": "^3.12.7",
+    "tailwindcss": "^4.0.6"
+  }
+}
